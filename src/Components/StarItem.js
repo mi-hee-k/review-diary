@@ -1,3 +1,5 @@
+import React from "react";
+
 const StarItem = ({ star_id, star_img, star_des, onClick, isSelected }) => {
   return (
     <div
@@ -13,4 +15,4 @@ const StarItem = ({ star_id, star_img, star_des, onClick, isSelected }) => {
   );
 };
 
-export default StarItem;
+export default React.memo(StarItem);
