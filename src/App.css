@@ -187,8 +187,13 @@ header button {
 }
 
 .DiaryItem .diary_date {
-  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.DiaryItem .diary_title {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -212,7 +217,8 @@ header button {
   margin-bottom: 10px;
 }
 
-.DiaryEditor .input_date {
+.DiaryEditor .input_date,
+.input_title {
   border: none;
   border-radius: 5px;
   background-color: #ececec;
@@ -222,9 +228,12 @@ header button {
   padding-left: 20px;
   padding-right: 20px;
 
-  cursor: pointer;
   font-family: "Jua", serif;
   font-size: 15px;
+}
+
+.DiaryEditor .input_date {
+  cursor: pointer;
 }
 
 .DiaryEditor .star_list_wrapper {
@@ -308,7 +317,7 @@ header button {
 
 .DiaryPage section {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   display: flex;
   flex-direction: column;
@@ -319,12 +328,13 @@ header button {
 .DiaryPage h4 {
   font-size: 22px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .DiaryPage .diary_img_wrapper {
   background-color: #ececec;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
 
   display: flex;

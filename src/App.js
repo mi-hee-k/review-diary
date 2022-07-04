@@ -55,7 +55,7 @@ function App() {
 
   const dataId = useRef(0);
   // CREATE
-  const onCreate = (date, content, star) => {
+  const onCreate = (date, content, star, title) => {
     dispatch({
       type: "CREATE",
       data: {
@@ -63,6 +63,7 @@ function App() {
         date: new Date(date).getTime(),
         content,
         star,
+        title,
       },
     });
     dataId.current++;
@@ -77,7 +78,7 @@ function App() {
   };
 
   // EDIT
-  const onEdit = (targetId, date, content, star) => {
+  const onEdit = (targetId, date, content, star, title) => {
     dispatch({
       type: "EDIT",
       data: {
@@ -85,6 +86,7 @@ function App() {
         date: new Date(date).getTime(),
         content,
         star,
+        title,
       },
     });
   };

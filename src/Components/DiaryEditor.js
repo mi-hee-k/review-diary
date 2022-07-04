@@ -11,8 +11,10 @@ import StarItem from "./StarItem";
 
 const DiaryEditor = ({ isEdit, originData }) => {
   const contentInput = useRef();
+  const titleInput = useRef();
   const [star, setStar] = useState(3);
   const [date, setDate] = useState(getStringDate(new Date()));
+  const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const navigate = useNavigate();
 
@@ -23,6 +25,10 @@ const DiaryEditor = ({ isEdit, originData }) => {
   }, []);
 
   const handleSubmit = () => {
+    if (title.length < 1) {
+      titleInput.current.focus();
+      return;
+    }
     if (content.length < 1) {
       contentInput.current.focus();
       return;
@@ -33,12 +39,12 @@ const DiaryEditor = ({ isEdit, originData }) => {
       )
     ) {
       if (!isEdit) {
-        onCreate(date, content, star);
+        onCreate(date, content, star, title);
       } else {
-        onEdit(originData.id, date, content, star);
+        onEdit(originData.id, date, content, star, title);
       }
     }
-
+    console.log({ date, content, star, title });
     navigate("/", { replace: true });
   };
 
@@ -52,6 +58,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
   useEffect(() => {
     if (isEdit) {
       setDate(getStringDate(new Date(parseInt(originData.date))));
+      setTitle(originData.title);
       setStar(originData.star);
       setContent(originData.content);
     }
@@ -86,6 +93,20 @@ const DiaryEditor = ({ isEdit, originData }) => {
             />
           </div>
         </section>
+
+        <section>
+          <h4>오늘 본 영화는?</h4>
+          <div className="input_box">
+            <input
+              className="input_title"
+              placeholder="제목을 입력하세요"
+              ref={titleInput}
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </div>
+        </section>
+
         <section>
           <h4>영화는 어땠나요?</h4>
           <div className="input_box star_list_wrapper">

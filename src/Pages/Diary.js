@@ -39,7 +39,7 @@ const Diary = () => {
       <div className="DiaryPage">
         <div>
           <MyHeader
-            headText={`${getStringDate(new Date(data.date))}리뷰`}
+            headText={`${data.title}`}
             leftChild={
               <MyButton text={"< 뒤로가기"} onClick={() => navigate(-1)} />
             }
@@ -53,7 +53,7 @@ const Diary = () => {
         </div>
         <article>
           <section>
-            <h4>오늘의 감정</h4>
+            <h4>영화는 어땠나요?</h4>
             <div
               className={[
                 "diary_img_wrapper",
@@ -65,7 +65,7 @@ const Diary = () => {
             </div>
           </section>
           <section>
-            <h4>오늘의 일기</h4>
+            <h4>영화 리뷰</h4>
             <div className="diary_content_wrapper">
               <p>{data.content}</p>
             </div>
