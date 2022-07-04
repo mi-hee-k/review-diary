@@ -16,7 +16,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
   const [content, setContent] = useState("");
   const navigate = useNavigate();
 
-  const { onCreate, onEdit } = useContext(DiaryDispatchContext);
+  const { onCreate, onEdit, onRemove } = useContext(DiaryDispatchContext);
 
   const handleClickEmote = (star) => {
     setStar(star);
@@ -27,7 +27,6 @@ const DiaryEditor = ({ isEdit, originData }) => {
       contentInput.current.focus();
       return;
     }
-
     if (
       window.confirm(
         isEdit ? "리뷰를 수정하시겠습니까?" : "새로운 리뷰를 작성하시겠습니까?"
@@ -41,6 +40,13 @@ const DiaryEditor = ({ isEdit, originData }) => {
     }
 
     navigate("/", { replace: true });
+  };
+
+  const handleRemove = () => {
+    if (window.confirm("정말 삭제하시겠습니까?")) {
+      onRemove(originData.id);
+      navigate("/", { replace: true });
+    }
   };
 
   useEffect(() => {
@@ -57,6 +63,15 @@ const DiaryEditor = ({ isEdit, originData }) => {
         headText={isEdit ? "리뷰 수정하기" : "새 리뷰쓰기"}
         leftChild={
           <MyButton text={"< 뒤로가기"} onClick={() => navigate(-1)} />
+        }
+        rightChild={
+          isEdit && (
+            <MyButton
+              text={"삭제하기"}
+              type={"negative"}
+              onClick={handleRemove}
+            />
+          )
         }
       />
       <div>
