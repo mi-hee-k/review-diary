@@ -10,7 +10,9 @@ const Home = () => {
 
   const [data, setData] = useState([]);
   const [curDate, setCurDate] = useState(new Date());
-  const headText = `${curDate.getFullYear()}년 ${curDate.getMonth() + 1}월`;
+  const headText = `${curDate.getFullYear()}년 ${
+    curDate.getMonth() + 1
+  }월의 영화기록장`;
 
   useEffect(() => {
     if (diaryList.length >= 1) {

@@ -83,7 +83,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
       />
       <div>
         <section>
-          <h4>오늘은 언제인가요?</h4>
+          <h4>언제 영화를 봤나요?</h4>
           <div className="input_box">
             <input
               className="input_date"
@@ -95,7 +95,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
         </section>
 
         <section>
-          <h4>오늘 본 영화는?</h4>
+          <h4>영화 제목은?</h4>
           <div className="input_box">
             <input
               className="input_title"
