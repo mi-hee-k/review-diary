@@ -40,31 +40,31 @@ export const DiaryDispatchContext = React.createContext();
 const dummyData = [
   {
     id: 1,
-    star: 1,
+    star: "1",
     content: "핵노잼",
     date: 1656570479106,
   },
   {
     id: 2,
-    star: 2,
+    star: "2",
     content: "노잼",
     date: 1656570479107,
   },
   {
     id: 3,
-    star: 3,
+    star: "3",
     content: "쏘쏘",
     date: 1656570479108,
   },
   {
     id: 4,
-    star: 4,
+    star: "4",
     content: "유잼",
     date: 1656570479109,
   },
   {
     id: 5,
-    star: 5,
+    star: "5",
     content: "꿀잼",
     date: 1656570479110,
   },
@@ -72,7 +72,7 @@ const dummyData = [
 
 function App() {
   const [data, dispatch] = useReducer(reducer, dummyData);
-  const dataId = useRef(0);
+  const dataId = useRef(6);
 
   // CREATE
   const onCreate = (date, content, star) => {
@@ -117,7 +117,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/new" element={<New />} />
-              <Route path="/edit" element={<Edit />} />
+              <Route path="/edit/:id" element={<Edit />} />
               <Route path="/diary/:id" element={<Diary />} />
             </Routes>
           </div>
