@@ -1,6 +1,6 @@
 # :pushpin: 영화 리뷰 다이어리
 >영화 리뷰 & 평점을 남길 수 있는 리뷰 다이어리
->(Demo링크)
+>(https://movie-review-diary.web.app/)
 
 <br />
 
