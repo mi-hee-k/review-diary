@@ -15,6 +15,11 @@ const Home = () => {
   }월의 영화기록장`;
 
   useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `리뷰 다이어리`;
+  }, []);
+
+  useEffect(() => {
     if (diaryList.length >= 1) {
       const firstDay = new Date(
         curDate.getFullYear(),
