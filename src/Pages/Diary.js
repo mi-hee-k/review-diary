@@ -6,13 +6,17 @@ import MyHeader from "../Components/MyHeader";
 import MyButton from "../Components/MyButton";
 
 import { starList } from "../util/star";
-import { getStringDate } from "../util/date";
 
 const Diary = () => {
   const { id } = useParams();
   const diaryList = useContext(DiaryStateContext);
   const navigate = useNavigate();
   const [data, setData] = useState();
+
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `리뷰 다이어리 - 리뷰 상세`;
+  }, []);
 
   useEffect(() => {
     if (diaryList.length >= 1) {

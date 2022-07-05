@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import DiaryEditor from "./../Components/DiaryEditor";
 
 const New = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `리뷰 다이어리 - 리뷰 쓰기`;
+  }, []);
   return (
     <div>
       <DiaryEditor />
