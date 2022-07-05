@@ -25,7 +25,7 @@
 ### 3-2. 5가지의 평점기능
 ### 3-3. 정렬기능
 ### 3-4. localStorage 저장
-### 3-5. Open Graph 기능
+### 3-5. Open Graph
 
 </div>
 </details>
