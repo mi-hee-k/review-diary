@@ -1,74 +1,42 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# :pushpin: 심플 유튜브
+>영화 리뷰 & 평점을 남길 수 있는 리뷰 다이어리
+>(Demo링크)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+## 1. 제작 기간 
+>일주일 소요 (개인프로젝트)
 
-In the project directory, you can run:
+<br />
 
-### `npm start`
+## 2. 사용 기술
+>HTML, CSS, javaScript, React (React Hook, reducer)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3. 핵심기능 
+> 이 서비스의 핵심기능은 영화 리뷰와 함께 1-5점까지 평점을 남기는 기능입니다. 
 
-### `npm test`
+<details>
+<summary><b>핵심 기능 설명 펼치기</b></summary>
+<div markdown="1">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3-1. 리뷰 작성, 수정, 삭제
+### 3-2. 5가지의 평점기능
+### 3-3. 정렬기능
+### 3-4. localStorage 저장
+### 3-5. Open Graph 기능
 
-### `npm run build`
+</div>
+</details>
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 5. 트러블슈팅
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5-1. Uncaught TypeError: Cannot read properties of undefined (reading 'id')
+> 문제 : localStorage에 저장된 데이터(배열)의 0번째를 찾는 코드에서 기존에 있던 일기를 삭제하면 localStorage에 빈 배열이 되어 id 값을 찾을 수 없음
+> 해결 : if 문으로 데이터가 1개 이상일 경우에만 실행되도록 수정
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# review-diary
->>>>>>> 236ad4efaba44df527a0798e3336afe239017c1d
+## 6. 회고 / 느낀점
