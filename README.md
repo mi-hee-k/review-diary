@@ -34,7 +34,7 @@
 ## 5. 트러블슈팅
 
 ### 5-1. Uncaught TypeError: Cannot read properties of undefined (reading 'id')
->문제 : localStorage에 저장된 데이터(배열)의 0번째를 찾는 코드에서 기존에 있던 일기를 삭제하면 localStorage에 빈 배열이 되어 id 값을 찾을 수 없음
+>문제 : localStorage에 저장된 데이터(배열)의 0번째를 찾는 코드에서 기존에 있던 일기를 삭제하면 localStorage의 데이터가 빈 배열이 되어 id 값을 찾을 수 없음
 >
 >해결 : if 문으로 데이터가 1개 이상일 경우에만 실행되도록 수정
 
