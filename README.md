@@ -11,7 +11,7 @@
 <br />
 
 ## 2. 사용 기술
->HTML, CSS, javaScript, React (React Hook, reducer)
+>HTML, CSS, javaScript, React (React Hook, redux)
 
 <br />
 
