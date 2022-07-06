@@ -3,6 +3,22 @@
 >
 >(https://movie-review-diary.web.app/)
 
+<details>
+<summary>이미지 미리보기</summary>
+<div markdown="1">
+
+<img src="https://user-images.githubusercontent.com/90510192/177555994-5f48a886-8f12-42d2-bdb3-6d988458e80e.PNG" width="400"> 
+<img src="https://user-images.githubusercontent.com/90510192/177556213-f0c4a9a5-eda6-4455-8774-4e3cdca850fc.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/90510192/177556226-171d8a27-907b-46d9-9ac7-3a977867c474.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/90510192/177556237-7b6db5f1-e2b7-4689-8167-89b3d9a6629d.PNG" width="400">
+
+
+</div>
+</details>
+
+
+
+
 <br />
 
 ## 1. 제작 기간 
@@ -31,6 +47,7 @@
   - 저장한 일기는 localStorage에 저장됩니다. 
 ### 3-5. Open Graph
   - Open Graph가 적용되어 있습니다. 
+  <img src="https://user-images.githubusercontent.com/90510192/177559437-7135b59e-26db-446a-8b10-5f6daf5766da.PNG" width="300">
 
 <br />
 
