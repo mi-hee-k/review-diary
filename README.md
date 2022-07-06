@@ -34,12 +34,17 @@
 
 ## 5. 트러블슈팅
 
-### 5-1. Uncaught TypeError: Cannot read properties of undefined (reading 'id')
+### 5-1. 월별 데이터 렌더링 시 각 달의 마지막 날에 쓴 리뷰가 보이지 않는 문제
+>문제 : 해당 월의 마지막 날을 구하는 코드에서 연, 월, 일까지만 세팅을 해놓음
+>
+>해결 : 시간, 분, 초까지 구하도록 코드 수정
+
+### 5-2. Uncaught TypeError: Cannot read properties of undefined (reading 'id')
 >문제 : localStorage에 저장된 데이터(배열)의 0번째를 찾는 코드에서 기존에 있던 일기를 삭제하면 localStorage의 데이터가 빈 배열이 되어 id 값을 찾을 수 없음
 >
 >해결 : if 문으로 데이터가 1개 이상일 경우에만 실행되도록 수정
 
-### 5-2. error: failed to push some refs to '저장소 주소'
+### 5-3. error: failed to push some refs to '저장소 주소'
 >문제 : 원격저장소에 로컬(내 컴퓨터)에는 없는 파일이 있을 때 push를 할 경우 나는 오류
 >
 >해결 : 원격저장소에서 로컬로 저장하지 않은 파일을 pull 한 후 다시 push
