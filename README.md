@@ -47,7 +47,7 @@
   - 저장한 일기는 localStorage에 저장됩니다. 
 ### 3-5. Open Graph
   - Open Graph가 적용되어 있습니다. 
-  <img src="https://user-images.githubusercontent.com/90510192/177559437-7135b59e-26db-446a-8b10-5f6daf5766da.PNG" width="300">
+  <img src="https://user-images.githubusercontent.com/90510192/177787902-bddb265c-2414-428e-aebe-b4d91b4c3f31.PNG" width="300">
 
 <br />
 
