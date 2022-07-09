@@ -9,7 +9,7 @@ const sortOptionList = [
 ];
 
 const sortFilterList = [
-  { value: "all", name: "전부" },
+  { value: "all", name: "모든 평점" },
   { value: "veryGood", name: "꿀잼" },
   { value: "good", name: "유잼" },
   { value: "soso", name: "쏘쏘" },
