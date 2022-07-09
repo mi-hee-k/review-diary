@@ -10,8 +10,11 @@ const sortOptionList = [
 
 const sortFilterList = [
   { value: "all", name: "전부" },
-  { value: "good", name: "좋은 평점" },
-  { value: "bad", name: "나쁜 평점" },
+  { value: "veryGood", name: "꿀잼" },
+  { value: "good", name: "유잼" },
+  { value: "soso", name: "쏘쏘" },
+  { value: "bad", name: "노잼" },
+  { value: "verybad", name: "핵노잼" },
 ];
 
 const ControlMenu = React.memo(({ value, onChange, optionList }) => {
@@ -37,10 +40,19 @@ const DiaryList = ({ diaryList }) => {
 
   const getProcessedDiaryList = () => {
     const filterCallBack = (item) => {
+      if (filter === "veryGood") {
+        return parseInt(item.star) === 5;
+      }
       if (filter === "good") {
-        return parseInt(item.star) > 3;
+        return parseInt(item.star) === 4;
+      }
+      if (filter === "soso") {
+        return parseInt(item.star) === 3;
+      }
+      if (filter === "bad") {
+        return parseInt(item.star) === 2;
       } else {
-        return parseInt(item.star) <= 3;
+        return parseInt(item.star) === 1;
       }
     };
     const compare = (a, b) => {
