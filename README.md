@@ -7,10 +7,10 @@
 <summary>이미지 미리보기</summary>
 <div markdown="1">
 
-<img src="https://user-images.githubusercontent.com/90510192/177555994-5f48a886-8f12-42d2-bdb3-6d988458e80e.PNG" width="400"> 
-<img src="https://user-images.githubusercontent.com/90510192/177556213-f0c4a9a5-eda6-4455-8774-4e3cdca850fc.PNG" width="400">
-<img src="https://user-images.githubusercontent.com/90510192/177556226-171d8a27-907b-46d9-9ac7-3a977867c474.PNG" width="400">
-<img src="https://user-images.githubusercontent.com/90510192/177556237-7b6db5f1-e2b7-4689-8167-89b3d9a6629d.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/90510192/178109594-769d67bc-4a40-490c-a0f1-5abfacbb18d2.PNG" width="400"> 
+<img src="https://user-images.githubusercontent.com/90510192/178109596-2f4b488c-15d4-42dd-bbb1-3f95dce3e0c7.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/90510192/178109597-758c82ce-2dcd-43f2-aaea-94ba35965fc5.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/90510192/178109598-1887c515-82a0-4264-9765-3e3e11617959.PNG" width="400">
 
 
 </div>
@@ -40,9 +40,9 @@
 ### 3-2. 1-5점까지 평점기능
   - 영화리뷰와 함께 1점부터 5점까지의 평점을 남길 수 있습니다. 
 ### 3-3. 정렬기능
-  - 리뷰를 정렬할 수 있는 필터가 있습니다
+  - 리뷰를 정렬할 수 있는 필터가 있습니다. 
     - 최신순 > 오래된 순
-    - 전부 > 좋은 평점 (3점 이상) > 나쁜 평점 (3점 이하)
+    - 모든 평점 > 꿀잼 > 유잼 > 쏘쏘 > 노잼 > 핵노잼
 ### 3-4. localStorage 저장
   - 저장한 일기는 localStorage에 저장됩니다. 
 ### 3-5. Open Graph
