@@ -218,7 +218,8 @@ header button {
 }
 
 .DiaryEditor .input_date,
-.input_title {
+.input_title,
+.input_oneLineReview {
   border: none;
   border-radius: 5px;
   background-color: #ececec;
@@ -230,6 +231,11 @@ header button {
 
   font-family: "Jua", serif;
   font-size: 15px;
+}
+
+.DiaryEditor .input_oneLineReview {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .DiaryEditor .input_date {
@@ -362,6 +368,15 @@ header button {
 .DiaryPage .star_des {
   font-size: 25px;
   color: white;
+}
+
+article section:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.diary_oneLineReview_wrapper {
+  font-size: 25px;
+  font-style: italic;
 }
 
 .DiaryPage .diary_content_wrapper {

@@ -69,6 +69,11 @@ const Diary = () => {
             </div>
           </section>
           <section>
+            <div className="diary_oneLineReview_wrapper">
+              <p>&#34;&#32;{data.oneLineReview}&#32;&#34;</p>
+            </div>
+          </section>
+          <section>
             <h4>영화 리뷰</h4>
             <div className="diary_content_wrapper">
               <p>{data.content}</p>

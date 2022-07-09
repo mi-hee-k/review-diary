@@ -12,9 +12,11 @@ import StarItem from "./StarItem";
 const DiaryEditor = ({ isEdit, originData }) => {
   const contentInput = useRef();
   const titleInput = useRef();
+  const oneLineReviewInput = useRef();
   const [star, setStar] = useState(3);
   const [date, setDate] = useState(getStringDate(new Date()));
   const [title, setTitle] = useState("");
+  const [oneLineReview, setOneLineReview] = useState("");
   const [content, setContent] = useState("");
   const navigate = useNavigate();
 
@@ -33,18 +35,21 @@ const DiaryEditor = ({ isEdit, originData }) => {
       contentInput.current.focus();
       return;
     }
+    if (oneLineReview.length < 1) {
+      oneLineReviewInput.current.focus();
+      return;
+    }
     if (
       window.confirm(
         isEdit ? "리뷰를 수정하시겠습니까?" : "새로운 리뷰를 작성하시겠습니까?"
       )
     ) {
       if (!isEdit) {
-        onCreate(date, content, star, title);
+        onCreate(date, content, star, title, oneLineReview);
       } else {
-        onEdit(originData.id, date, content, star, title);
+        onEdit(originData.id, date, content, star, title, oneLineReview);
       }
     }
-    console.log({ date, content, star, title });
     navigate("/", { replace: true });
   };
 
@@ -60,6 +65,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
       setDate(getStringDate(new Date(parseInt(originData.date))));
       setTitle(originData.title);
       setStar(originData.star);
+      setOneLineReview(originData.oneLineReview);
       setContent(originData.content);
     }
   }, [isEdit, originData]);
@@ -106,7 +112,6 @@ const DiaryEditor = ({ isEdit, originData }) => {
             />
           </div>
         </section>
-
         <section>
           <h4>영화는 어땠나요?</h4>
           <div className="input_box star_list_wrapper">
@@ -120,6 +125,20 @@ const DiaryEditor = ({ isEdit, originData }) => {
             ))}
           </div>
         </section>
+
+        <section>
+          <h4>한줄평</h4>
+          <div className="input_box">
+            <input
+              className="input_oneLineReview"
+              placeholder="한줄평을 적어보세요"
+              ref={oneLineReviewInput}
+              value={oneLineReview}
+              onChange={(e) => setOneLineReview(e.target.value)}
+            />
+          </div>
+        </section>
+
         <section>
           <h4>리뷰</h4>
           <div className="input_box text_wrapper">

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import MyButton from "./MyButton";
 
-const DiaryItem = ({ id, content, star, date, title }) => {
+const DiaryItem = ({ id, star, date, title, oneLineReview }) => {
   const navigate = useNavigate();
   const strDate = new Date(parseInt(date)).toLocaleDateString();
 
@@ -13,6 +13,7 @@ const DiaryItem = ({ id, content, star, date, title }) => {
   const goEdit = () => {
     navigate(`/edit/${id}`);
   };
+
   return (
     <div className="DiaryItem">
       <div
@@ -24,7 +25,9 @@ const DiaryItem = ({ id, content, star, date, title }) => {
       <div onClick={goDetail} className="info_wrapper">
         <div className="diary_date">{strDate}</div>
         <div className="diary_title">{title}</div>
-        <div className="diary_content_preview">{content.slice(0, 25)}</div>
+        <div className="diary_content_preview">
+          {oneLineReview.slice(0, 25)}
+        </div>
       </div>
       <div className="btn_wrapper">
         <MyButton text={"수정하기"} onClick={goEdit} />
