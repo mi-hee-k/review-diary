@@ -7,9 +7,9 @@
 <summary>이미지 미리보기</summary>
 <div markdown="1">
 
-<img src="https://user-images.githubusercontent.com/90510192/178109594-769d67bc-4a40-490c-a0f1-5abfacbb18d2.PNG" width="400"> 
+<img src="https://user-images.githubusercontent.com/90510192/178109759-c8703df1-afba-4819-b14d-5e6359ddc49d.PNG" width="400"> 
 <img src="https://user-images.githubusercontent.com/90510192/178109596-2f4b488c-15d4-42dd-bbb1-3f95dce3e0c7.PNG" width="400">
-<img src="https://user-images.githubusercontent.com/90510192/178109597-758c82ce-2dcd-43f2-aaea-94ba35965fc5.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/90510192/178109761-536247ef-6f1d-4dab-9992-545ecd8c9f36.PNG" width="400">
 <img src="https://user-images.githubusercontent.com/90510192/178109598-1887c515-82a0-4264-9765-3e3e11617959.PNG" width="400">
 
 
@@ -34,7 +34,7 @@
 ## 3. 핵심기능 
 
 ### 3-1. 리뷰 작성, 수정, 삭제
-  - 영화를 본 날짜와 제목, 평점, 리뷰가 담긴 일기를 작성하고 수정하고 삭제할 수 있습니다. 
+  - 영화를 본 날짜와 제목, 평점, 한줄평, 리뷰가 담긴 일기를 작성하고 수정하고 삭제할 수 있습니다. 
   - 새 리뷰쓰기를 누르면 해당 날짜가 자동으로 세팅된 에디터 페이지가 열리고 영화에 대한 리뷰를 할 수 있습니다. 
   - 저장된 리뷰를 눌러 상세페이지로 이동하면 수정과 삭제가 가능합니다. 
 ### 3-2. 1-5점까지 평점기능
